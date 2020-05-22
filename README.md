@@ -1,7 +1,8 @@
-# Everything your Thought about Aliens was a LIE!
+# Everything You Thought About Aliens Was a LIE!
 
 ## Usage
-Clone the REPO
+
+Clone the REPO in the PRIMARY node of your MongoDB replica set
 ``` 
 $ git clone https://github.com/Aly-Tomato/CloudCluster-UFO-MongoDB.git	
 $ cd CloudCluser-UFO-MongoDB
