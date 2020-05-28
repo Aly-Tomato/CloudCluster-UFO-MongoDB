@@ -23,6 +23,7 @@ for state_obj in db.states.find({}, {"state":1, "_id":0}):
         sightings_list = [x for x in state_sightings]
     
     logging.info("updating {} with {} total sightings".format(state, len(sightings_list)))
+    db.states.update({"state": state}, {"$set": {"Number of sightings": len(sightings_list)}})
     db.states.update({"state": state}, {"$set": {"sightings": sightings_list}})
 
 logging.info("success")
